@@ -1,6 +1,6 @@
 import {View, Text} from 'react-native';
 
-export default function RickMortyHeader() {
+export default function RickMortyHeader(props) {
     return (
         <View style={{ flex: 0.15, backgroundColor: 'black'}} >
             <Text 
@@ -10,7 +10,7 @@ export default function RickMortyHeader() {
                     color: 'white',
                     textAlign: 'center',
                 }}>
-                Rick&Morty character list
+                {props.text}
             </Text>
         </View>
     )
